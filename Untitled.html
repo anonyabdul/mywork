@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دليل Hermes Agent الكامل — إنفوجرافيك</title>
+<style>body{margin:0;background:#0000F4;}</style>
+<base target="_blank">
+</head>
+<body>
+<div dir="rtl" style="background:#0000F4;color:#fff;min-height:100%;padding:48px 28px 60px;font-family:'Courier New',Courier,monospace;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:-40px;left:-40px;width:280px;height:280px;opacity:.18;background:repeating-linear-gradient(45deg,#fff 0 2px,transparent 2px 18px);pointer-events:none;"></div>
+  <div style="position:absolute;bottom:-60px;right:-60px;width:320px;height:320px;opacity:.14;background:repeating-linear-gradient(-45deg,#fff 0 2px,transparent 2px 22px);pointer-events:none;"></div>
+  <div style="max-width:900px;margin:0 auto;position:relative;">
+    <div style="text-align:center;letter-spacing:6px;font-size:12px;margin-bottom:18px;">OPEN SOURCE &bull; MIT LICENSE</div>
+    <h1 style="text-align:center;font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(34px,6vw,64px);line-height:1.15;margin:0 0 8px;">دليل <span dir="ltr">HERMES</span> الكامل</h1>
+    <div style="text-align:center;letter-spacing:5px;font-size:13px;margin-bottom:26px;">THE AGENT THAT GROWS WITH YOU</div>
+    <div dir="ltr" style="border:1px solid #fff;padding:12px 16px;font-size:13px;letter-spacing:1px;margin:0 auto 40px;max-width:620px;background:rgba(255,255,255,.06);">$ curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash</div>
+    <div style="border:1px solid #fff;margin-bottom:36px;">
+      <div style="border-bottom:1px solid #fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.08);">
+        <span style="font-size:18px;font-weight:bold;">1) أوامر الطرفية <span dir="ltr">(CLI)</span></span>
+        <span dir="ltr" style="font-size:12px;letter-spacing:3px;opacity:.8;">TERMINAL</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;">
+        <div style="padding:16px 18px;border-left:1px solid rgba(255,255,255,.25);">
+          <div style="font-size:12px;letter-spacing:3px;margin-bottom:10px;opacity:.85;">&#9656; التشغيل</div>
+          <code dir="ltr" style="display:block;font-size:12px;line-height:2;">hermes — محادثة تفاعلية<br>hermes chat -q "نص" — سؤال مباشر<br>hermes --tui — واجهة رسومية<br>hermes desktop — سطح المكتب<br>hermes dashboard — لوحة الويب</code>
+        </div>
+        <div style="padding:16px 18px;">
+          <div style="font-size:12px;letter-spacing:3px;margin-bottom:10px;opacity:.85;">&#9656; الموديل والمزود</div>
+          <code dir="ltr" style="display:block;font-size:12px;line-height:2;">hermes setup — معالج الإعداد<br>hermes model — اختيار الموديل<br>hermes login / logout<br>hermes fallback add/remove/list<br>hermes auth add/list/remove</code>
+        </div>
+        <div style="padding:16px 18px;border-top:1px solid rgba(255,255,255,.25);border-left:1px solid rgba(255,255,255,.25);">
+          <div style="font-size:12px;letter-spacing:3px;margin-bottom:10px;opacity:.85;">&#9656; الإعدادات</div>
+          <code dir="ltr" style="display:block;font-size:12px;line-height:2;">hermes config show/get/set/unset<br>hermes doctor — فحص الصحة<br>hermes status — حالة المكونات<br>hermes update — التحديث</code>
+        </div>
+        <div style="padding:16px 18px;border-top:1px solid rgba(255,255,255,.25);">
+          <div style="font-size:12px;letter-spacing:3px;margin-bottom:10px;opacity:.85;">&#9656; الجلسات والمهام</div>
+          <code dir="ltr" style="display:block;font-size:12px;line-height:2;">hermes sessions list/browse/export<br>hermes cron list/create/pause/run<br>hermes webhook subscribe/list<br>hermes send — رسالة عبر البوابة</code>
+        </div>
+        <div style="padding:16px 18px;border-top:1px solid rgba(255,255,255,.25);border-left:1px solid rgba(255,255,255,.25);grid-column:1/-1;">
+          <div style="font-size:12px;letter-spacing:3px;margin-bottom:10px;opacity:.85;">&#9656; الأدوات والمهارات</div>
+          <code dir="ltr" style="display:block;font-size:12px;line-height:2;">hermes tools list/enable/disable &nbsp;&nbsp; hermes skills list/browse/install &nbsp;&nbsp; hermes mcp add/list/test &nbsp;&nbsp; hermes profile list/create/use &nbsp;&nbsp; hermes computer-use install/doctor</code>
+        </div>
+      </div>
+    </div>
+    <div style="border:1px solid #fff;margin-bottom:36px;">
+      <div style="border-bottom:1px solid #fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.08);">
+        <span style="font-size:18px;font-weight:bold;">2) أوامر داخل الجلسة <span dir="ltr">(/)</span></span>
+        <span dir="ltr" style="font-size:12px;letter-spacing:3px;opacity:.8;">IN-SESSION</span>
+      </div>
+      <div style="padding:16px 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <div><div style="font-size:12px;letter-spacing:3px;margin-bottom:8px;opacity:.85;">&#9656; الجلسة</div><code dir="ltr" style="font-size:12px;line-height:2;">/new /title /compress<br>/undo /status /sessions<br>/branch /bg</code></div>
+        <div><div style="font-size:12px;letter-spacing:3px;margin-bottom:8px;opacity:.85;">&#9656; الموديل</div><code dir="ltr" style="font-size:12px;line-height:2;">/model /reasoning<br>/verbose /yolo /reload</code></div>
+        <div><div style="font-size:12px;letter-spacing:3px;margin-bottom:8px;opacity:.85;">&#9656; الإنتاجية</div><code dir="ltr" style="font-size:12px;line-height:2;">/cron /kanban /learn<br>/memory /curator /moa</code></div>
+        <div><div style="font-size:12px;letter-spacing:3px;margin-bottom:8px;opacity:.85;">&#9656; البوابة (تيليجرام)</div><code dir="ltr" style="font-size:12px;line-height:2;">/approve /deny<br>/restart /sethome</code></div>
+        <div><div style="font-size:12px;letter-spacing:3px;margin-bottom:8px;opacity:.85;">&#9656; معلومات</div><code dir="ltr" style="font-size:12px;line-height:2;">/help /usage<br>/insights /version</code></div>
+      </div>
+    </div>
+    <div style="border:1px solid #fff;margin-bottom:36px;">
+      <div style="border-bottom:1px solid #fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.08);">
+        <span style="font-size:18px;font-weight:bold;">3) المهارات <span dir="ltr">(51 SKILL)</span></span>
+        <span dir="ltr" style="font-size:12px;letter-spacing:3px;opacity:.8;">SKILLS</span>
+      </div>
+      <div style="padding:16px 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;">
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span style="font-size:13px;font-weight:bold;">وكلاء مستقلون</span><div style="font-size:12px;margin-top:5px;opacity:.9;">claude-code · codex · opencode · computer-use</div></div>
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span style="font-size:13px;font-weight:bold;">إبداع</span><div style="font-size:12px;margin-top:5px;opacity:.9;">تصاميم HTML · إنفوجرافيك · فيديو Manim · فن p5.js · أنسنة النصوص</div></div>
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span style="font-size:13px;font-weight:bold;">إيميل ووسائط</span><div style="font-size:12px;margin-top:5px;opacity:.9;">فرز البريد · himalaya · يوتيوب · GIF · تحليل صوت</div></div>
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span style="font-size:13px;font-weight:bold;">إنتاجية</span><div style="font-size:12px;margin-top:5px;opacity:.9;">docx · pdf · xlsx · powerpoint · notion · google-workspace · خرائط · متابعة أسعار · استخراج مهام</div></div>
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span style="font-size:13px;font-weight:bold;">بحث</span><div style="font-size:12px;margin-top:5px;opacity:.9;">arxiv · مراقبة أخبار المنافسين · استشهادات موثقة</div></div>
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span style="font-size:13px;font-weight:bold;">تطوير وويب</span><div style="font-size:12px;margin-top:5px;opacity:.9;">github · تصحيح منهجي · TDD · مراجعة وتبسيط كود · تجاوز الحجب وpaywall</div></div>
+      </div>
+    </div>
+    <div style="border:1px solid #fff;margin-bottom:36px;">
+      <div style="border-bottom:1px solid #fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.08);">
+        <span style="font-size:18px;font-weight:bold;">4) الخيارات المهمة</span>
+        <span dir="ltr" style="font-size:12px;letter-spacing:3px;opacity:.8;">FLAGS &amp; CONFIG</span>
+      </div>
+      <div style="padding:16px 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;">
+        <code dir="ltr" style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;font-size:12px;display:block;">-m MODEL -p PROVIDER<br><span style="opacity:.8;">تجاوز الموديل لأمر واحد</span></code>
+        <code dir="ltr" style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;font-size:12px;display:block;">-t toolsets<br><span style="opacity:.8;">تحديد الأدوات المتاحة</span></code>
+        <code dir="ltr" style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;font-size:12px;display:block;">--resume / --continue<br><span style="opacity:.8;">استئناف جلسة</span></code>
+        <code dir="ltr" style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;font-size:12px;display:block;">-w &nbsp; worktree معزول<br><span style="opacity:.8;">لوكلاء متوازيين</span></code>
+        <code dir="ltr" style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;font-size:12px;display:block;">--yolo<br><span style="opacity:.8;">بدون طلب موافقة</span></code>
+        <code dir="ltr" style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;font-size:12px;display:block;">agent.max_turns = 150<br><span style="opacity:.8;">سقف خطوات الوكيل</span></code>
+        <code dir="ltr" style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;font-size:12px;display:block;">compression.threshold = 50%<br><span style="opacity:.8;">متى يضغط السياق</span></code>
+        <code dir="ltr" style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;font-size:12px;display:block;">memory.memory_enabled &#10003;<br><span style="opacity:.8;">الذاكرة الدائمة مفعلة</span></code>
+      </div>
+    </div>
+    <div style="border:1px solid #fff;margin-bottom:40px;">
+      <div style="border-bottom:1px solid #fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.08);">
+        <span style="font-size:18px;font-weight:bold;">5) مميزات إضافية من الموقع الرسمي</span>
+        <span dir="ltr" style="font-size:12px;letter-spacing:3px;opacity:.8;">OFFICIAL SITE</span>
+      </div>
+      <div style="padding:16px 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;">
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span dir="ltr" style="font-size:12px;letter-spacing:2px;opacity:.8;">#1 CONNECT</span><div style="font-size:14px;font-weight:bold;margin:4px 0;">يعيش في كل مكان</div><div style="font-size:12px;opacity:.9;">تيليجرام · ديسكورد · سلاك · واتساب · سيجنال · إيميل · CLI</div></div>
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span dir="ltr" style="font-size:12px;letter-spacing:2px;opacity:.8;">#2 REMEMBER</span><div style="font-size:14px;font-weight:bold;margin:4px 0;">ذاكرة دائمة</div><div style="font-size:12px;opacity:.9;">يتعلم مشاريعك ويولّد مهارات تلقائياً ولا ينسى الحلول</div></div>
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span dir="ltr" style="font-size:12px;letter-spacing:2px;opacity:.8;">#3 SCHEDULE</span><div style="font-size:14px;font-weight:bold;margin:4px 0;">أتمتة مجدولة</div><div style="font-size:12px;opacity:.9;">جدولة بلغة طبيعية لتقارير ونسخ احتياطي وموجزات</div></div>
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span dir="ltr" style="font-size:12px;letter-spacing:2px;opacity:.8;">#4 DELEGATE</span><div style="font-size:14px;font-weight:bold;margin:4px 0;">تفويض المهام</div><div style="font-size:12px;opacity:.9;">وكلاء فرعيون معزولون بمحادثات وطرفيات خاصة</div></div>
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span dir="ltr" style="font-size:12px;letter-spacing:2px;opacity:.8;">#5 SEARCH</span><div style="font-size:14px;font-weight:bold;margin:4px 0;">بحث وتصفح</div><div style="font-size:12px;opacity:.9;">بحث ويب · أتمتة متصفح · رؤية · توليد صور · نص إلى كلام</div></div>
+        <div style="border:1px solid rgba(255,255,255,.4);padding:10px 12px;"><span dir="ltr" style="font-size:12px;letter-spacing:2px;opacity:.8;">#6 EXPERIMENT</span><div style="font-size:14px;font-weight:bold;margin:4px 0;">عزل Sandbox</div><div style="font-size:12px;opacity:.9;">خمسة محركات: local · Docker · SSH · Singularity · Modal</div></div>
+      </div>
+    </div>
+    <div style="text-align:center;font-size:12px;letter-spacing:3px;line-height:2.2;opacity:.95;">
+      NOUS RESEARCH<br>MIT LICENSE &bull; 2026<br>
+      <span dir="ltr">HERMES AGENT V0.21.1</span><br>
+      <span style="opacity:.8;">المرجع الرسمي المحدث دائماً: <span dir="ltr">/help</span> داخل أي جلسة — hermes-agent.nousresearch.com</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
